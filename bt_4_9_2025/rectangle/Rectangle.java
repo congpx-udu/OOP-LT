@@ -5,8 +5,8 @@ public class Rectangle {
     private int y;
 
     public Rectangle(int width, int height) {
-        setHeight(height);
         setWidth(width);
+        setHeight(height);
     }
 
     public void setWidth(int width) {
@@ -29,11 +29,11 @@ public class Rectangle {
         return y;
     }
 
-    public static int tinhChuVi(int x, int y) {
-        return 2*(x+y);
+    public int tinhChuVi() {
+        return 2 * (x + y);
     }
 
-    public static int tinhDienTich(int x, int y) {
-        return x*y;
+    public int tinhDienTich() {
+        return x * y;
     }
 }
